@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    #result{
+        width: 70px;
+    }
+</style>
+<script>
+    window.onload = function(){
+       //변수선언
+        var btn1 = document.getElementById("bnt1");
+
+        //이벤트 선언
+        function btn1click (){
+            var text_id=document.getElementById("name");
+            var result_id=document.getElementById("result");
+
+            result.innerHTML += text_id.value;
+            
+        }
+        btn1.onclick = btn1click;
+    }
+    
+</script>
+</head>
+<body>
+   
+<form>
+<div>
+    <label for="name">이름</label>
+    <br>
+    <input type="text" id="name" size="7">
+
+    
+    <label for="button"></label>
+    <input type="button" id="bnt1" value="전송" >
+
+</div>
+    <br>
+<div>
+    <label for="contents">전송결과</label>
+    <br>
+    <textarea name="" id="result" cols="17" rows="10" ></textarea>
+    
+
+
+</div>
+</form>
+</body>
+</html>
